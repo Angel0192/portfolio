@@ -4,7 +4,11 @@
 }
 
 body {
-    background-color: #605B56;
+    background-color: #837A75;
+}
+
+.bod{
+    padding: 8px;
 }
 
 .navbar {
@@ -14,6 +18,8 @@ body {
     background-color: #ACC18A ;
     padding: 1rem;
     color: white;
+    border-radius: 8px;
+    box-shadow: black;
   }
 
 .navbar-links {
@@ -27,7 +33,7 @@ body {
     padding: 0.5rem 1rem;
 }
 
-.navbar-links a:hover{
+.navbar-links a:hover, .nav-link.active{
     cursor: pointer;
     background-color: #605B56; 
     border-radius: 8px;
