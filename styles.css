@@ -1,25 +1,21 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
-    
+    color: black;
 }
 
-body {
-    background-color: #837A75;
-}
 
-.bod{
-    padding: 8px;
-}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ACC18A ;
     padding: 1rem;
     color: white;
-    border-radius: 8px;
-    box-shadow: black;
+    box-shadow: 0 4px 8px rgb(6, 6, 6);
   }
 
 .navbar-links {
@@ -27,16 +23,36 @@ body {
     gap: 1rem;
   }
 
-.navbar-links a{
+.navbar-links button{
+    background-color: white;
     color: white;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    border: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
-.navbar-links a:hover, .nav-link.active{
+.navbar-links button:hover{
     cursor: pointer;
-    background-color: #605B56; 
     border-radius: 8px;
     width: auto;
     height: auto;
+    background-color: gray;
+}
+
+.column {
+    float:inline-start;
+    width: 40%;
+  }
+  
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.about-Me{
+    padding: 20px;
 }
