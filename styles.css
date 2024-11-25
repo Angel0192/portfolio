@@ -1,36 +1,38 @@
 html{
     scroll-behavior: smooth;
+    background-color: #454545;
 }
 
 *{
     margin: 0;
-    color: black;
+    color: white;
+    font-family: "Rubik", sans-serif;
 }
 
-
-
 .navbar {
+    background-color: #93B7BE;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    color: white;
+    color: #93B7BE;
     box-shadow: 0 4px 8px rgb(6, 6, 6);
   }
 
 .navbar-links {
     display: flex;
     gap: 1rem;
+    background-color: #93B7BE;
   }
 
 .navbar-links button{
-    background-color: white;
-    color: white;
+    background-color: #93B7BE;
+    color: #93B7BE;
     text-decoration: none;
     padding: 0.5rem 1rem;
     border: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .navbar-links button:hover{
@@ -38,21 +40,42 @@ html{
     border-radius: 8px;
     width: auto;
     height: auto;
-    background-color: gray;
+    background-color: rgb(117, 116, 116);
+    font-size: 25px;
 }
 
 .column {
-    float:inline-start;
-    width: 40%;
-  }
-  
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+    justify-content: start;
+    float: left;
+    width: 50%;
 }
 
-div.about-Me{
-    padding: 20px;
+.row{
+    margin: 0;
+    display: flex;
+    justify-content:flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+.item{
+    justify-content: space-evenly;
+}
+
+button{
+    background-color: #93B7BE;
+    border-radius: 8px;
+    font-size: 25px;
+    transition: 0.3s;
+    padding: 8px;
+}
+
+button:hover {
+    font-size: 35px;
+}
+
+#crane:hover{
+    color: aqua;
 }
