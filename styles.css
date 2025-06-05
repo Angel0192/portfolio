@@ -1,149 +1,52 @@
-/* The overall background of the website*/
+/* Background color of webpage */
 html{
+    background-color: #191919;
+}
+* {
     scroll-behavior: smooth;
-    background-color: #212121;
-}
-
-/* Intro Div*/
-.introDiv{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-block: 10px;
-}
-
-/* Everything else from the html*/
-*{
     color: white;
     margin: 0;
     font-family: "Funnel Sans", sans-serif;
 }
 
-/* Navigation Bar */
-.navbar {
-    background-color: #1C1C1C;
+/* Navbar container */
+.navbar > section{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-    color: #93B7BE;
-    box-shadow: 0 2px 12px rgb(6, 6, 6);
-    position: sticky;
+    justify-content: flex-end;
+    padding: 16px;
+    background-color: transparent; /* keep navbar clean */
 }
 
-/* Navigation Bar Button colors and padding*/
-.navbar-links button{
-    background-color: #1C1C1C;
-    color: #1C1C1C;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+/* Navbar buttons */
+.navbar button.navBtn {
+    background-color: #191919;
+    color: white;
+    border-radius: 8px;
     border: none;
+    padding: 5px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Hover effect */
+.navbar button.navBtn:hover {
+    background-color: #D05353;
+    transform: background-color 0.3s, transform 0.2s;
+}
+
+/* Nav - Profile Picture */
+.navbar .nav-pfp {
+    justify-content: left;
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;        
+    object-fit: cover;  
+}
+
+/* Spacer */
+.spacer{
+    padding-right: 68%;
     display: inline-block;
-    font-size: 20px;
-}
-
-/* Navigation Bar Buttons on hover */
-
-.navbar-links button:hover{
-    cursor: pointer;
-    border-radius: 8px;
-    width: auto;
-    height: auto;
-    background-color: rgb(73, 69, 69);
-    font-size: 21px;
-    transition: all 0.2s ease-in;
-    
-}
-
-/* For rows and columns */
-
-.row{
-    display: flex;
-    justify-content: space-evenly;
-    align-self: center;
-    padding: auto;
-}
-
-.col{
-    display: flex;
-    columns: 2px auto;
-    padding: auto;
-}
-
-/* Floating Action Button */
-.fab {
-    position: fixed;
-    bottom: 40px;
-    z-index: 10;
-    right: 20px;
-    width: 60px;
-    height: 60px;
-    background-color: #D62828;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(246, 244, 244, 0.794);
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    transition: 0.3s ;
-    
-}
-
-/* Floating Action Button on hover */
-.fab:hover {
-    background-color: #D62828;
-    box-shadow: 2px 2px 10px rgb(255, 255, 255);
-    width: 63px;
-    height: 63px;
-}
-
-/* Default Color for new Buttons */
-button{
-    background-color: #93B7BE;
-    border-radius: 8px;
-    font-size: 25px;
-    transition: 0.3s;
-    padding: 8px;
-}
-
-
-.introPic {
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    height: 350px;
-    width: 275px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #dcdcdc;
-}
-
-.Grad_pic{
-   margin-top: auto;
-   position: fixed;
-   bottom: 0;
-   width: 100%;
-}
-
-footer {
-    position: fixed;
-    bottom: 0;
-    align-items: center;
-    justify-content: center;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    background: #212121;
-    color: white;
-    padding: 20px; 
-    
-}
-.top-header{
-    display: flex;
-    background-color: #D62828;
-    padding: 15px;
-    justify-content: center;
-    align-self: center;
 }
