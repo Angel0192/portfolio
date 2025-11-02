@@ -36,21 +36,13 @@ html{
     transform: background-color 0.3s, transform 0.2s;
 }
 
-/* Nav - Profile Picture */
-.navbar .nav-pfp {
-    justify-content: left;
-    width: 80px;
-    height: 80px;
-    border-radius: 8px;        
-    object-fit: cover;  
-}
 
 .top-header{
     background-color: #D05353;
 }
 
 .name{
-    display: inline;
+    display: flex;
 }
 
 /* Spacer */
@@ -58,9 +50,4 @@ html{
     padding-right: 75%;
     display: flex;
     font-size: 14px;
-}
-
-Section .intro{
-    display: flex;
-
 }
