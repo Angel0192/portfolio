@@ -13,9 +13,9 @@ html{
 .navbar > section{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: safe;
     padding: 16px;
-    background-color: transparent; /* keep navbar clean */
+    background-color: transparent; 
 }
 
 /* Navbar buttons */
@@ -24,7 +24,7 @@ html{
     color: white;
     border-radius: 8px;
     border: none;
-    padding: 5px 15px;
+    padding: 5px 10px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
@@ -45,8 +45,22 @@ html{
     object-fit: cover;  
 }
 
+.top-header{
+    background-color: #D05353;
+}
+
+.name{
+    display: inline;
+}
+
 /* Spacer */
 .spacer{
-    padding-right: 68%;
-    display: inline-block;
+    padding-right: 75%;
+    display: flex;
+    font-size: 14px;
+}
+
+Section .intro{
+    display: flex;
+
 }
