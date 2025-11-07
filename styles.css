@@ -48,6 +48,6 @@ html{
 /* Spacer */
 .spacer{
     padding-right: 75%;
-    display: flex;
+    display: inline-flexbox;
     font-size: 14px;
 }
